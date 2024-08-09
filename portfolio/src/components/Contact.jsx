@@ -48,7 +48,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className='w-full sm:h-full  bg-gradient-to-b from-gray-900 to-black pt-24 p-4 text-white'>
+      className='w-full sm:h-full  bg-gradient-to-b bg-gray-900 to-black pt-24 p-4 text-white'>
 
 <div className='md:hidden  flex justify-center items-center bottom-[35%] '>
       <ul className='flex justify-center items-center'>

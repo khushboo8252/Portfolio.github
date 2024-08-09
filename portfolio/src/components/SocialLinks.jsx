@@ -4,6 +4,21 @@ import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 
 const SocialLinks = () => {
+  const handleResumeClick = (e) => {
+    e.preventDefault();
+    const resumeUrl = "./image/Khushboo_Kumari.Resume.pdf";
+
+    // Open the URL in a new tab
+    window.open(resumeUrl, '_blank');
+
+    // Trigger a download
+    const a = document.createElement('a');
+    a.href = resumeUrl;
+    a.download = "Khushboo_Kumari.Resume.pdf"; // Ensure the download attribute is set
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  };
   const links = [
     {
       id: 1,
@@ -40,16 +55,17 @@ const SocialLinks = () => {
           Resume <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: './image/resume.pdf', 
+      href: '#', 
       style: 'rounded-br-md',
-      download: true
+      onClick:handleResumeClick
+      
     }
   ];
 
   return (
     <div className='hidden lg:flex flex-col top-[35%] left-0 fixed'>
       <ul>
-        {links.map(({ id, child, download, href, style }) => (
+        {links.map(({ id, child, onClick, href, style }) => (
           <li
             key={id}
             className={`flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-500 ${style}`}
@@ -57,7 +73,7 @@ const SocialLinks = () => {
             <a
               href={href}
               className='flex justify-between items-center w-full text-white'
-              download={download}
+              onClick={onClick}
               target='_blank'
               rel='noopener noreferrer' 
             >

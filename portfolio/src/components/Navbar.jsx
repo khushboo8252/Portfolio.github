@@ -29,7 +29,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className='flex justify-between items-center w-full h-16 px-4 z-10 bg-black text-white fixed'>
+    <div className='flex justify-between items-center w-full h-16 px-4 z-10 bg-white text-black fixed'>
       <div className='text-5xl font-signature ml-2 mt-3 hover:text-sky-600 duration-500'>
         <h1>Khushboo</h1>
       </div>
@@ -38,7 +38,7 @@ const Navbar = () => {
         {links.map(({ id, link }) => (
           <li 
             key={id}
-            className='px-4 cursor-pointer capitalize font-medium text-gray-500 hover:text-sky-600 hover:scale-110 duration-200'
+            className='px-4 cursor-pointer capitalize font-medium text-gray-700 hover:text-sky-600 hover:scale-110 duration-200'
           >
             <Link to={link} smooth duration={500} onClick={() => setNav(false)}>
               {link}

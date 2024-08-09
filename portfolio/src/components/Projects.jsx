@@ -22,7 +22,7 @@ const Projects = () => {
   ];
 
   return (
-    <div name="projects" className="bg-gradient-to-b from-black to-gray-800 pt-[20%] w-full sm:h-screen text-white md:h-screen">
+    <div name="projects" className="bg-gradient-to-b  bg-gray-900 pt-[20%] w-full sm:h-screen text-white md:h-screen">
       <div className=" pb-20  max-w-screen-lg p-2 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8 ">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500 ">Projects</p>
