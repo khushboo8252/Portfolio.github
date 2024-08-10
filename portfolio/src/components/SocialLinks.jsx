@@ -8,17 +8,16 @@ const SocialLinks = () => {
     e.preventDefault();
     const resumeUrl = "./image/Khushboo_Kumari.Resume.pdf";
 
-    // Open the URL in a new tab
-    window.open(resumeUrl, '_blank');
-
     // Trigger a download
     const a = document.createElement('a');
     a.href = resumeUrl;
     a.download = "Khushboo_Kumari.Resume.pdf"; // Ensure the download attribute is set
+    a.target = '_blank'; // Open the URL in a new tab
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
   };
+
   const links = [
     {
       id: 1,

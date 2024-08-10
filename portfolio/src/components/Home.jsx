@@ -6,20 +6,18 @@ const Home = () => {
     e.preventDefault();
     const resumeUrl = "./image/Khushboo_Kumari.Resume.pdf";
 
-    // Open the URL in a new tab
-    window.open(resumeUrl, '_blank');
-
     // Trigger a download
     const a = document.createElement('a');
     a.href = resumeUrl;
     a.download = "Khushboo_Kumari.Resume.pdf"; // Ensure the download attribute is set
+    a.target = '_blank'; // Open the URL in a new tab
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
   };
 
   return (
-    <div name="home" className=' w-full pt-12 sm:h-screen bg-gradient-to-b bg-gray-900 via-black to-gray-800'>
+    <div name="home" className='w-full pt-12 sm:h-screen bg-gradient-to-b bg-gray-900 via-black to-gray-800'>
       <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 sm:flex-row sm:ml-12 md:mx-auto'>
         <div className='flex flex-col justify-center h-full pt-10'>
           <h2 className='text-4xl sm:text-6xl font-bold text-white'>
