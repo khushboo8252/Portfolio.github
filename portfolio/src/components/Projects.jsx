@@ -2,23 +2,23 @@ import React from 'react';
 
 const Projects = () => {
   const portfolios = [
-    { id: 1, src: "./image/Project6.png" ,
-        description:"TATA 1mg is an online healthcare platform that provides users with access to a wide range of healthcar products, services and information.",
+    { id: 1, src: "./image/ChatApp.png" ,
+        description:"Its developing chatApp, user can chat and exchange thought here.",
         techSkill:"HTML|CSS|JS|React|MongoDB",
-        demo:"https://65c6fe92cf29b62c62ea1151--silver-lamington-c305ff.netlify.app/", 
-        code:"https://github.com/khushboo8252/TATA-1mg"},
+        demo:"https://chatapp-mernstack.onrender.com/", 
+        code:"https://github.com/khushboo8252/ChatApp_MERNStack"},
 
-    { id: 2, src: "./image/Project2.png" ,
-      description:"Rev up your journey with the Revv Rental Car website, your one-stop destination for renting cars hassle-free.",
-      techSkill:"HTML|CSS|JS|React|Node.js",
-      demo:"https://656b1d57db89ad397b415f6f--storied-kataifi-a7568c.netlify.app/",
-       code:"https://github.com/khushboo8252/Project1"},
+    { id: 2, src: "./image/ChatAI.png" ,
+      description:" The app features a clean, modern interface for smooth, real-time conversations with an AI",
+      techSkill:"HTML|CSS|JS|React",
+      demo:"https://66eefaad3e2f928d1a948dcd--dapper-nougat-048475.netlify.app/",
+       code:"https://github.com/khushboo8252/ChatAI"},
 
-    { id: 3, src: "./image/Project3.png" ,
-      description:"Experience the elegance of time with our modern and functional clock application.",
-      techSkill:"HTML|CSS|JS|Node.js|Git",
-      demo:"https://656b20354cdb7d3b25eec3ed--sparkly-chaja-70e6db.netlify.app/",
-       code:"https://github.com/khushboo8252/Live-Clock"},
+    { id: 3, src: "./image/Ecommerce.png" ,
+      description:"The dashboard allows administrators to efficiently handle inventory by adding, editing, or removing products, as well as tracking customer orders and updating their statuses.",
+      techSkill:"HTML|CSS|JS|React|MongoDB",
+      demo:"https://incredible-meerkat-a1368e.netlify.app/",
+       code:"https://github.com/khushboo8252/Ecommerce"},
   ];
 
   return (
